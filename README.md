@@ -24,6 +24,7 @@ Columns:
 
 ```bash
 python streaming_job.py
+```
 
 ## Implementation Note
 
@@ -48,6 +49,7 @@ Windowing & State Management Explanation
 I chose a 2 minute time window of tumbling as it’s a fixed period of time which is not overlapping and can be used to observe patient heart-rate data. In a hospital setting, healthcare professionals require timely detection of abnormal conditions, with a minimization of unnecessary alerts. A 2-minute window gives a good balance between response and stability as it combines several readings over a short period and smooths the effect of noisy individual readings.
 
 For tumbling windows, each window contains exactly one event and the alerts that come out of the windows are easy to analyze and report on.
+
 
 ## Where the Pipeline Requires State
 
