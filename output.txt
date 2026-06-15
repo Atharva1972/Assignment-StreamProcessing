@@ -1,0 +1,5 @@
+Displays patient alerts with:
+
+patient_id
+event_time
+avg_heart_rate
